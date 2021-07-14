@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PatientHome">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linear_pathome"
+        android:gravity="center"
+        android:visibility="visible"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#F67979"
+            android:textColorHint="#000000"
+            android:id="@+id/problem_pathome"
+            android:layout_margin="30dp"
+            android:hint="Enter your Problem"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/btnsubmit_pathome"
+            android:text="Submit"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/linear2_pathome"
+        android:visibility="gone">
+       <ListView
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="5"
+           android:id="@+id/listdoctors_pathome">
+
+       </ListView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="Check Appointment"
+            android:id="@+id/btn_check_appoint_pat"/>
+
+    </LinearLayout>
+
+</LinearLayout>
